@@ -1,0 +1,16 @@
+FROM golang:latest AS builder
+
+WORKDIR /usr/app
+
+COPY ./message.go .
+
+RUN go build message.go
+
+
+FROM scratch
+
+WORKDIR /usr/app
+
+COPY --from=builder /usr/app/message .
+
+CMD ["./message"]
