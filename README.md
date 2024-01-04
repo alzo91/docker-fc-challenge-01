@@ -1,5 +1,5 @@
 ###### Desafio 1, fullcycle go 
-- [] The Challenge is handling image and show the message (Fullcycle rocks!) after running the container
+- [x] The Challenge is handling image and show the message (Fullcycle rocks!) after running the container
 
 ##### Running by dev mode
 
@@ -17,7 +17,7 @@ $ docker run --rm -v ./:/usr/app zotarelli/challenge_go:latest
 ```
 
 ###### Running as production 
--[x] Building image
+- [x] Building image
 ```docker build -t zotarelli/challenge_go:prod . -f Dockerfile.prod```
 
 - [x] Using image which was built
